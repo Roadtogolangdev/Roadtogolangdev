@@ -1,16 +1,26 @@
 ### Hi there 👋
 
-<!--
-**Roadtogolangdev/Roadtogolangdev** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+```go
+package Life
 
-Here are some ideas to get you started:
+import "Parents"
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+type Me struct {
+    Name     string
+    Age      int
+    Location string
+    Hobbies  []string
+    AboutMe  string
+    Experience string
+}
+
+func main() {
+    me := Me{
+        Name:     "Верещака Артем",
+        Age:      30,
+        Location: "Россия, Самара",
+        Hobbies:  []string{"Освоение Golang", "Warhammer40k", "В поиске крутого работодателя :cool:"},
+        AboutMe:  "Я здесь, чтобы стать хорошим разработчиком.",
+        Experience: "Начинающий разработчик, 2 проекта ждут грамотного ревью и будут скоро добавлены сюда",
+    }
+}
